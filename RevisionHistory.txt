@@ -1,0 +1,4 @@
+ListWindowsShares
+
+Version 1.0.5638; June 9, 2015
+	- Initial release

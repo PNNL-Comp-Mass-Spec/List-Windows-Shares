@@ -35,14 +35,9 @@ Module modMain
         Try
             objParseCommandLine.ParseCommandLine()
 
-            If objParseCommandLine.IsParameterPresent("?") OrElse
-               objParseCommandLine.IsParameterPresent("h") OrElse
-               objParseCommandLine.IsParameterPresent("help") Then
-
+            If objParseCommandLine.NeedToShowHelp Then
                 ShowProgramHelp()
-
                 Exit Sub
-
             End If
 
             Dim showAdminShares = objParseCommandLine.IsParameterPresent("Admin")
